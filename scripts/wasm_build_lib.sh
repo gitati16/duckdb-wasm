@@ -59,7 +59,6 @@ emcmake cmake \
     -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
     -DDUCKDB_LOCATION=${DUCKDB_LOCATION} \
     -s WASM=1 \
-    -flto \
     ${ADDITIONAL_FLAGS}
 
 emmake make \
