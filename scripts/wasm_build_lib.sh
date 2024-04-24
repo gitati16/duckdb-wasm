@@ -58,7 +58,10 @@ emcmake cmake \
     -DCMAKE_C_COMPILER_LAUNCHER=ccache \
     -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
     -DDUCKDB_LOCATION=${DUCKDB_LOCATION} \
-    -s Wasm=1 \
+    -s WASM=1 \
+    -flto \
+    -s ENVIRONMENT=web \
+    -Os \
     ${ADDITIONAL_FLAGS}
 
 emmake make \
