@@ -60,8 +60,6 @@ emcmake cmake \
     -DDUCKDB_LOCATION=${DUCKDB_LOCATION} \
     -s WASM=1 \
     -flto \
-    -s ENVIRONMENT=web \
-    -Os \
     ${ADDITIONAL_FLAGS}
 
 emmake make \
